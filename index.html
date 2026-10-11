@@ -36,7 +36,7 @@ body {
 /* фон-фотография */
 .bg {
   position: fixed; inset: 0; z-index: -1;
-  background: var(--ink) url("img/bg.jpg") right center / auto 100% no-repeat;
+  background: var(--ink) url("bg.jpg") right center / auto 100% no-repeat;
 }
 .bg::after {
   content: ""; position: absolute; inset: 0;
@@ -216,7 +216,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   <section id="shirt">
     <div class="wrap product">
       <div class="tee">
-        <img src="./img/tee.png" alt="Чёрная футболка">
+        <img src="tee.png" alt="Чёрная футболка">
       </div>
       <div>
         <p class="label">Что это</p>
@@ -310,7 +310,7 @@ var CONFIG = {
   price: 10000,                       // цена в рублях
   sizes: ["S", "M", "L", "XL"],       // доступные размеры
   telegram: "lollylegal",              // ваш ник в Telegram без @
-  music: "audio/music.mp3",           // путь к файлу с музыкой
+  music: "music.mp3",           // путь к файлу с музыкой
   musicVolume: 0.5,                   // громкость от 0 до 1
   promoCodes: { "LARP10": 10, "TRIAD15": 15 }  // код: скидка в процентах
 };

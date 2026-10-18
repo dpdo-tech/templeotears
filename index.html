@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noarchive">
 <meta name="theme-color" content="#0a0a0a">
@@ -33,7 +33,10 @@
     <h1>THELARPTRIAD</h1>
     <p class="lead">Чёрная футболка с белым треугольником. Для тех, кто в курсе, что все вокруг играют роль, и всё равно выходит на улицу в образе.</p>
     <p class="price-row"><span class="price" id="price-main"></span> <a class="btn" href="#order" data-scroll="order">Заказать</a></p>
-    <img class="tee" src="tee.png" alt="Чёрная футболка" draggable="false">
+    <div class="tee-pair">
+      <img class="tee" src="tee.png" alt="Чёрная футболка, спереди" draggable="false">
+      <img class="tee" src="tee-back.png" alt="Чёрная футболка, сзади" draggable="false">
+    </div>
   </div>
 
   <div class="block">
@@ -162,7 +165,7 @@
 </section>
 
 <!-- ============ КОНТАКТЫ ============ -->
-<section data-route="contacts" hidden>
+<section data-route="contacts" class="contacts" hidden>
   <div class="doc">
     <h1>Контакты</h1>
     <dl class="spec">
@@ -238,6 +241,11 @@
   </nav>
   <p class="muted">THE LARP TRIAD Performative</p>
 </footer>
+
+<button class="music" id="music" type="button" aria-pressed="false" aria-label="Включить музыку" title="Музыка">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path class="note" d="M9 18V6l10-2v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/><path class="mute" d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+</button>
+<audio id="bgm" src="music.mp3" loop preload="none"></audio>
 
 <script src="config.js"></script>
 <script src="protect.js"></script>

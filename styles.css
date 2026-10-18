@@ -67,12 +67,6 @@ h3{margin:28px 0 8px;font-size:18px}
 .music .mute{display:block}
 .music[aria-pressed="true"] .mute{display:none}
 .music[aria-pressed="true"]{background:#fff;color:#000}
-
-.contacts::before{content:"";position:fixed;inset:0;z-index:-1;background:url(bg.jpg) center/cover no-repeat,url(bg.png) center/cover no-repeat,url(bg.webp) center/cover no-repeat;pointer-events:none}
-.contacts .doc{min-height:calc(100vh - 120px);display:flex;flex-direction:column;justify-content:flex-end}
-.contacts .doc>*{max-width:440px}
-.contacts .doc{padding-bottom:32px}
-.contacts .doc h1,.contacts .doc .spec,.contacts .doc .muted{background:rgba(10,10,10,.78);backdrop-filter:blur(6px)}
-.contacts .doc h1{margin:0;padding:16px 18px 6px;border-radius:14px 14px 0 0;font-size:clamp(28px,6vw,40px)}
-.contacts .doc .spec{padding:4px 18px}
-.contacts .doc .muted{margin:0;padding:8px 18px 14px;border-radius:0 0 14px 14px}
+.contacts::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(10,10,10,.45),rgba(10,10,10,.45)),url(bg.jpg) center center/contain no-repeat,url(bg.png) center center/contain no-repeat,url(bg.webp) center center/contain no-repeat;pointer-events:none}
+.contacts .doc h1,.contacts .doc .spec,.contacts .doc .muted{text-shadow:0 1px 10px rgba(0,0,0,.9)}
+.contacts .doc p{color:#fff}

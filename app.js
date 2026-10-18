@@ -1,1 +1,221 @@
-(function(){'use strict';var _0x2fc0ad=window['S'+'H'+'O'+'P'],_0x66c27a=function(_0xac8c25,_0x1de912){return(_0x1de912||document)['q'+'u'+'e'+'r'+'y'+'S'+'e'+'l'+'e'+'c'+'t'+'o'+'r'](_0xac8c25);},_0x3ba067=function(_0x5aefe9,_0x536f44){return Array['p'+'r'+'o'+'t'+'o'+'t'+'y'+'p'+'e']['s'+'l'+'i'+'c'+'e']['c'+'a'+'l'+'l']((_0x536f44||document)['q'+'u'+'e'+'r'+'y'+'S'+'e'+'l'+'e'+'c'+'t'+'o'+'r'+'A'+'l'+'l'](_0x5aefe9));};function _0x27652c(_0x288f46,_0x4f3a0a){return String(_0x288f46==null?'':_0x288f46)['r'+'e'+'p'+'l'+'a'+'c'+'e'](/[\u0000-\u001f\u007f<>]/g,'\x20')['r'+'e'+'p'+'l'+'a'+'c'+'e'](/\s+/g,'\x20')['t'+'r'+'i'+'m']()['s'+'l'+'i'+'c'+'e'](0x0,_0x4f3a0a||0xc8);}function _0x157f9b(_0x4c2ed4){return _0x4c2ed4['t'+'o'+'L'+'o'+'c'+'a'+'l'+'e'+'S'+'t'+'r'+'i'+'n'+'g']('r'+'u'+'-'+'R'+'U')+'\u00a0'+_0x2fc0ad['c'+'u'+'r'+'r'+'e'+'n'+'c'+'y'];}function _0x23b1b8(_0x4d0754,_0x535181,_0x584bd6){_0x4d0754['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x535181,_0x4d0754['c'+'l'+'a'+'s'+'s'+'N'+'a'+'m'+'e']='m'+'u'+'t'+'e'+'d'+'\x20'+(_0x584bd6||'');}function _0x2aa599(_0x4681f1){return crypto['s'+'u'+'b'+'t'+'l'+'e']['d'+'i'+'g'+'e'+'s'+'t']('S'+'H'+'A'+'-'+'2'+'5'+'6',new TextEncoder()['e'+'n'+'c'+'o'+'d'+'e'](_0x4681f1))['t'+'h'+'e'+'n'](function(_0x107b75){return Array['p'+'r'+'o'+'t'+'o'+'t'+'y'+'p'+'e']['m'+'a'+'p']['c'+'a'+'l'+'l'](new Uint8Array(_0x107b75),function(_0x412a9a){return _0x412a9a['t'+'o'+'S'+'t'+'r'+'i'+'n'+'g'](0x10)['p'+'a'+'d'+'S'+'t'+'a'+'r'+'t'](0x2,'0');})['j'+'o'+'i'+'n']('');});}function _0x556cf5(_0x5b2d3c){if(navigator['c'+'l'+'i'+'p'+'b'+'o'+'a'+'r'+'d']&&navigator['c'+'l'+'i'+'p'+'b'+'o'+'a'+'r'+'d']['w'+'r'+'i'+'t'+'e'+'T'+'e'+'x'+'t'])return navigator['c'+'l'+'i'+'p'+'b'+'o'+'a'+'r'+'d']['w'+'r'+'i'+'t'+'e'+'T'+'e'+'x'+'t'](_0x5b2d3c);return new Promise(function(_0x47ff1e,_0x1e0423){var _0x3a915e=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('t'+'e'+'x'+'t'+'a'+'r'+'e'+'a');_0x3a915e['v'+'a'+'l'+'u'+'e']=_0x5b2d3c,document['b'+'o'+'d'+'y']['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x3a915e),_0x3a915e['s'+'e'+'l'+'e'+'c'+'t']();try{document['e'+'x'+'e'+'c'+'C'+'o'+'m'+'m'+'a'+'n'+'d']('c'+'o'+'p'+'y')?_0x47ff1e():_0x1e0423();}catch(_0x45e3c4){_0x1e0423(_0x45e3c4);}_0x3a915e['r'+'e'+'m'+'o'+'v'+'e']();});}var _0x135cd4={'name':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['n'+'a'+'m'+'e'],'inn':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['i'+'n'+'n'],'ogrnip':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['o'+'g'+'r'+'n'+'i'+'p'],'email':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['e'+'m'+'a'+'i'+'l'],'phone':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['p'+'h'+'o'+'n'+'e'],'city':_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['c'+'i'+'t'+'y']};Object['k'+'e'+'y'+'s'](_0x135cd4)['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x4c14dd){_0x3ba067('.'+'s'+'e'+'l'+'l'+'e'+'r'+'-'+_0x4c14dd)['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x3c19b0){_0x3c19b0['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x135cd4[_0x4c14dd];});});var _0x1f1078=new Date()['t'+'o'+'L'+'o'+'c'+'a'+'l'+'e'+'D'+'a'+'t'+'e'+'S'+'t'+'r'+'i'+'n'+'g']('r'+'u'+'-'+'R'+'U');_0x3ba067('.'+'t'+'o'+'d'+'a'+'y')['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x1e1acd){_0x1e1acd['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x1f1078;}),_0x66c27a('#'+'p'+'r'+'i'+'c'+'e'+'-'+'m'+'a'+'i'+'n')['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x157f9b(_0x2fc0ad['p'+'r'+'i'+'c'+'e']),_0x66c27a('#'+'p'+'r'+'i'+'c'+'e'+'-'+'s'+'p'+'e'+'c')['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x157f9b(_0x2fc0ad['p'+'r'+'i'+'c'+'e']),_0x66c27a('#'+'r'+'e'+'t'+'u'+'r'+'n'+'-'+'a'+'d'+'d'+'r')['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']='П'+'о'+'л'+'у'+'ч'+'а'+'т'+'е'+'л'+'ь'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'а'+':'+'\x0a'+_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['r'+'e'+'t'+'u'+'r'+'n'+'A'+'d'+'d'+'r'+'e'+'s'+'s'];if(_0x2fc0ad['t'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'U'+'s'+'e'+'r']){var _0x43ccec=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('a');_0x43ccec['h'+'r'+'e'+'f']='h'+'t'+'t'+'p'+'s'+':'+'/'+'/'+'t'+'.'+'m'+'e'+'/'+encodeURIComponent(_0x2fc0ad['t'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'U'+'s'+'e'+'r']),_0x43ccec['r'+'e'+'l']='n'+'o'+'o'+'p'+'e'+'n'+'e'+'r'+'\x20'+'n'+'o'+'r'+'e'+'f'+'e'+'r'+'r'+'e'+'r',_0x43ccec['t'+'a'+'r'+'g'+'e'+'t']='_'+'b'+'l'+'a'+'n'+'k',_0x43ccec['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']='@'+_0x2fc0ad['t'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'U'+'s'+'e'+'r'];var _0x206234=_0x66c27a('#'+'t'+'g'+'-'+'l'+'i'+'n'+'e');_0x206234['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']='',_0x206234['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x43ccec);}var _0x329937=[['P'+'S'+'L','ш'+'к'+'а'+'л'+'а'+'\x20'+'о'+'ц'+'е'+'н'+'к'+'и'+'\x20'+'в'+'н'+'е'+'ш'+'н'+'о'+'с'+'т'+'и'+'\x20'+'п'+'о'+'\x20'+'ф'+'о'+'р'+'у'+'м'+'у'+'\x20'+'P'+'S'+'L'],['H'+'T'+'N','h'+'i'+'g'+'h'+'-'+'t'+'i'+'e'+'r'+'\x20'+'n'+'o'+'r'+'m'+'i'+'e'+','+'\x20'+'н'+'о'+'р'+'м'+'и'+'с'+'\x20'+'в'+'ы'+'с'+'о'+'к'+'о'+'г'+'о'+'\x20'+'у'+'р'+'о'+'в'+'н'+'я'],['M'+'T'+'N','m'+'i'+'d'+'-'+'t'+'i'+'e'+'r'+'\x20'+'n'+'o'+'r'+'m'+'i'+'e'+','+'\x20'+'н'+'о'+'р'+'м'+'и'+'с'+'\x20'+'с'+'р'+'е'+'д'+'н'+'е'+'г'+'о'+'\x20'+'у'+'р'+'о'+'в'+'н'+'я'],['L'+'T'+'N','l'+'o'+'w'+'-'+'t'+'i'+'e'+'r'+'\x20'+'n'+'o'+'r'+'m'+'i'+'e'+','+'\x20'+'н'+'о'+'р'+'м'+'и'+'с'+'\x20'+'н'+'и'+'з'+'к'+'о'+'г'+'о'+'\x20'+'у'+'р'+'о'+'в'+'н'+'я'],['C'+'H'+'A'+'D','э'+'т'+'а'+'л'+'о'+'н'+'\x20'+'п'+'р'+'и'+'в'+'л'+'е'+'к'+'а'+'т'+'е'+'л'+'ь'+'н'+'о'+'г'+'о'+'\x20'+'м'+'у'+'ж'+'ч'+'и'+'н'+'ы'+'\x20'+'в'+'\x20'+'с'+'л'+'е'+'н'+'г'+'е'],['M'+'O'+'G','п'+'р'+'е'+'в'+'з'+'о'+'й'+'т'+'и'+'\x20'+'к'+'о'+'г'+'о'+'-'+'т'+'о'+'\x20'+'в'+'н'+'е'+'ш'+'н'+'о'+'с'+'т'+'ь'+'ю'],['L'+'O'+'O'+'K'+'S'+'M'+'A'+'X','п'+'р'+'о'+'к'+'а'+'ч'+'к'+'а'+'\x20'+'в'+'н'+'е'+'ш'+'н'+'о'+'с'+'т'+'и'+'\x20'+'в'+'с'+'е'+'м'+'и'+'\x20'+'с'+'п'+'о'+'с'+'о'+'б'+'а'+'м'+'и'],['M'+'E'+'W'+'I'+'N'+'G','п'+'о'+'с'+'т'+'а'+'н'+'о'+'в'+'к'+'а'+'\x20'+'я'+'з'+'ы'+'к'+'а'+'\x20'+'р'+'а'+'д'+'и'+'\x20'+'«'+'п'+'р'+'а'+'в'+'и'+'л'+'ь'+'н'+'о'+'й'+'»'+'\x20'+'ч'+'е'+'л'+'ю'+'с'+'т'+'и'],['C'+'T','c'+'a'+'n'+'t'+'h'+'a'+'l'+'\x20'+'t'+'i'+'l'+'t'+','+'\x20'+'н'+'а'+'к'+'л'+'о'+'н'+'\x20'+'л'+'и'+'н'+'и'+'и'+'\x20'+'г'+'л'+'а'+'з'],['G'+'A','g'+'o'+'n'+'i'+'a'+'l'+'\x20'+'a'+'n'+'g'+'l'+'e'+','+'\x20'+'у'+'г'+'о'+'л'+'\x20'+'н'+'и'+'ж'+'н'+'е'+'й'+'\x20'+'ч'+'е'+'л'+'ю'+'с'+'т'+'и'],['F'+'W'+'H'+'R','о'+'т'+'н'+'о'+'ш'+'е'+'н'+'и'+'е'+'\x20'+'ш'+'и'+'р'+'и'+'н'+'ы'+'\x20'+'л'+'и'+'ц'+'а'+'\x20'+'к'+'\x20'+'в'+'ы'+'с'+'о'+'т'+'е'],['I'+'P'+'D','р'+'а'+'с'+'с'+'т'+'о'+'я'+'н'+'и'+'е'+'\x20'+'м'+'е'+'ж'+'д'+'у'+'\x20'+'з'+'р'+'а'+'ч'+'к'+'а'+'м'+'и'],['P'+'F'+'L','д'+'л'+'и'+'н'+'а'+'\x20'+'г'+'л'+'а'+'з'+'н'+'о'+'й'+'\x20'+'щ'+'е'+'л'+'и'],['U'+'E'+'E','о'+'т'+'к'+'р'+'ы'+'т'+'о'+'с'+'т'+'ь'+'\x20'+'в'+'е'+'р'+'х'+'н'+'е'+'г'+'о'+'\x20'+'в'+'е'+'к'+'а'],['N'+'W','ш'+'к'+'а'+'л'+'а'+'\x20'+'Н'+'о'+'р'+'в'+'у'+'д'+'а'+','+'\x20'+'п'+'р'+'о'+'\x20'+'з'+'а'+'л'+'ы'+'с'+'и'+'н'+'ы'],['S'+'M'+'V','s'+'e'+'x'+'u'+'a'+'l'+'\x20'+'m'+'a'+'r'+'k'+'e'+'t'+'\x20'+'v'+'a'+'l'+'u'+'e'+','+'\x20'+'«'+'р'+'ы'+'н'+'о'+'ч'+'н'+'а'+'я'+'\x20'+'с'+'т'+'о'+'и'+'м'+'о'+'с'+'т'+'ь'+'»']],_0x5ef5ad=_0x66c27a('#'+'l'+'e'+'x'+'-'+'g'+'r'+'i'+'d'),_0x1fa256=_0x66c27a('#'+'m'+'a'+'r'+'q'+'u'+'e'+'e');function _0x5b1e76(){_0x329937['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x5869c1){var _0x3c9570=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('s'+'p'+'a'+'n');_0x3c9570['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x5869c1[0x0],_0x1fa256['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x3c9570);});}_0x5b1e76(),_0x5b1e76(),_0x329937['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x23cf20){var _0x36d2da=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('d'+'i'+'v');_0x36d2da['c'+'l'+'a'+'s'+'s'+'N'+'a'+'m'+'e']='c'+'a'+'r'+'d';var _0x49f7d8=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('b');_0x49f7d8['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x23cf20[0x0];var _0x8bc0c3=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('s'+'p'+'a'+'n');_0x8bc0c3['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x23cf20[0x1],_0x36d2da['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x49f7d8),_0x36d2da['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x8bc0c3),_0x5ef5ad['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x36d2da);});var _0x5adbfd=_0x3ba067('['+'d'+'a'+'t'+'a'+'-'+'r'+'o'+'u'+'t'+'e'+']')['m'+'a'+'p'](function(_0x4b82f1){return _0x4b82f1['g'+'e'+'t'+'A'+'t'+'t'+'r'+'i'+'b'+'u'+'t'+'e']('d'+'a'+'t'+'a'+'-'+'r'+'o'+'u'+'t'+'e');});function _0x230a87(){var _0x35d4b2=location['h'+'a'+'s'+'h']['r'+'e'+'p'+'l'+'a'+'c'+'e'](/^#\/?/,''),_0x4ca77e=_0x5adbfd['i'+'n'+'d'+'e'+'x'+'O'+'f'](_0x35d4b2)>-0x1?_0x35d4b2:'h'+'o'+'m'+'e';_0x3ba067('['+'d'+'a'+'t'+'a'+'-'+'r'+'o'+'u'+'t'+'e'+']')['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x322460){_0x322460['h'+'i'+'d'+'d'+'e'+'n']=_0x322460['g'+'e'+'t'+'A'+'t'+'t'+'r'+'i'+'b'+'u'+'t'+'e']('d'+'a'+'t'+'a'+'-'+'r'+'o'+'u'+'t'+'e')!==_0x4ca77e;}),_0x3ba067('.'+'b'+'a'+'r'+'\x20'+'['+'d'+'a'+'t'+'a'+'-'+'n'+'a'+'v'+']')['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x468c9a){_0x468c9a['c'+'l'+'a'+'s'+'s'+'L'+'i'+'s'+'t']['t'+'o'+'g'+'g'+'l'+'e']('o'+'n',_0x468c9a['g'+'e'+'t'+'A'+'t'+'t'+'r'+'i'+'b'+'u'+'t'+'e']('d'+'a'+'t'+'a'+'-'+'n'+'a'+'v')===_0x4ca77e);});if(_0x4ca77e!=='h'+'o'+'m'+'e'||_0x5adbfd['i'+'n'+'d'+'e'+'x'+'O'+'f'](_0x35d4b2)>-0x1||!_0x35d4b2)window['s'+'c'+'r'+'o'+'l'+'l'+'T'+'o'](0x0,0x0);}window['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('h'+'a'+'s'+'h'+'c'+'h'+'a'+'n'+'g'+'e',_0x230a87),_0x230a87(),_0x3ba067('['+'d'+'a'+'t'+'a'+'-'+'s'+'c'+'r'+'o'+'l'+'l'+']')['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x5042ad){_0x5042ad['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('c'+'l'+'i'+'c'+'k',function(_0x3012f3){_0x3012f3['p'+'r'+'e'+'v'+'e'+'n'+'t'+'D'+'e'+'f'+'a'+'u'+'l'+'t']();var _0x517121=document['g'+'e'+'t'+'E'+'l'+'e'+'m'+'e'+'n'+'t'+'B'+'y'+'I'+'d'](_0x5042ad['g'+'e'+'t'+'A'+'t'+'t'+'r'+'i'+'b'+'u'+'t'+'e']('d'+'a'+'t'+'a'+'-'+'s'+'c'+'r'+'o'+'l'+'l'));if(_0x517121)_0x517121['s'+'c'+'r'+'o'+'l'+'l'+'I'+'n'+'t'+'o'+'V'+'i'+'e'+'w']({'behavior':'s'+'m'+'o'+'o'+'t'+'h'});});});var _0x1adbb8=0x0,_0xdf16d1=_0x66c27a('#'+'o'+'r'+'d'+'e'+'r'+'-'+'f'+'o'+'r'+'m');function _0x587835(){_0x66c27a('#'+'t'+'o'+'t'+'a'+'l')['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x157f9b(Math['r'+'o'+'u'+'n'+'d'](_0x2fc0ad['p'+'r'+'i'+'c'+'e']*(0x64-_0x1adbb8)/0x64));}_0x587835(),_0x66c27a('#'+'p'+'r'+'o'+'m'+'o'+'-'+'a'+'p'+'p'+'l'+'y')['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('c'+'l'+'i'+'c'+'k',function(){var _0x133a38=_0x27652c(_0xdf16d1['e'+'l'+'e'+'m'+'e'+'n'+'t'+'s']['p'+'r'+'o'+'m'+'o']['v'+'a'+'l'+'u'+'e'],0x28)['t'+'o'+'U'+'p'+'p'+'e'+'r'+'C'+'a'+'s'+'e'](),_0x27372e=_0x66c27a('#'+'p'+'r'+'o'+'m'+'o'+'-'+'m'+'s'+'g');if(!_0x133a38){_0x1adbb8=0x0,_0x587835(),_0x23b1b8(_0x27372e,'');return;}_0x2aa599(_0x133a38)['t'+'h'+'e'+'n'](function(_0x5dd181){Object['p'+'r'+'o'+'t'+'o'+'t'+'y'+'p'+'e']['h'+'a'+'s'+'O'+'w'+'n'+'P'+'r'+'o'+'p'+'e'+'r'+'t'+'y']['c'+'a'+'l'+'l'](_0x2fc0ad['p'+'r'+'o'+'m'+'o'+'s'],_0x5dd181)?(_0x1adbb8=Math['m'+'i'+'n'](0x5a,Math['m'+'a'+'x'](0x0,+_0x2fc0ad['p'+'r'+'o'+'m'+'o'+'s'][_0x5dd181]||0x0)),_0x23b1b8(_0x27372e,'П'+'р'+'о'+'м'+'о'+'к'+'о'+'д'+'\x20'+'п'+'р'+'и'+'м'+'е'+'н'+'ё'+'н'+':'+'\x20'+'с'+'к'+'и'+'д'+'к'+'а'+'\x20'+_0x1adbb8+('%'+'.'),'o'+'k')):(_0x1adbb8=0x0,_0x23b1b8(_0x27372e,'Т'+'а'+'к'+'о'+'г'+'о'+'\x20'+'п'+'р'+'о'+'м'+'о'+'к'+'о'+'д'+'а'+'\x20'+'н'+'е'+'т'+'.','e'+'r'+'r')),_0x587835();});});var _0xfc3d94=0x0;_0xdf16d1['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('s'+'u'+'b'+'m'+'i'+'t',function(_0x11177a){_0x11177a['p'+'r'+'e'+'v'+'e'+'n'+'t'+'D'+'e'+'f'+'a'+'u'+'l'+'t']();var _0x517ebe=_0x66c27a('#'+'o'+'r'+'d'+'e'+'r'+'-'+'m'+'s'+'g'),_0x432a95=_0xdf16d1['e'+'l'+'e'+'m'+'e'+'n'+'t'+'s'];if(_0x432a95['w'+'e'+'b'+'s'+'i'+'t'+'e']['v'+'a'+'l'+'u'+'e'])return;var _0x48ba34=_0x27652c(_0x432a95['n'+'a'+'m'+'e']['v'+'a'+'l'+'u'+'e'],0x50),_0x80e34f=_0x27652c(_0x432a95['c'+'o'+'n'+'t'+'a'+'c'+'t']['v'+'a'+'l'+'u'+'e'],0x50),_0x33a6fc=_0x27652c(_0x432a95['s'+'i'+'z'+'e']['v'+'a'+'l'+'u'+'e'],0x4);if(!_0x48ba34||!_0x80e34f||['S','M','L','X'+'L']['i'+'n'+'d'+'e'+'x'+'O'+'f'](_0x33a6fc)<0x0){_0x23b1b8(_0x517ebe,'З'+'а'+'п'+'о'+'л'+'н'+'и'+'т'+'е'+'\x20'+'и'+'м'+'я'+','+'\x20'+'к'+'о'+'н'+'т'+'а'+'к'+'т'+'\x20'+'и'+'\x20'+'р'+'а'+'з'+'м'+'е'+'р'+'.','e'+'r'+'r');return;}if(!_0x432a95['a'+'g'+'r'+'e'+'e']['c'+'h'+'e'+'c'+'k'+'e'+'d']){_0x23b1b8(_0x517ebe,'Н'+'у'+'ж'+'н'+'о'+'\x20'+'с'+'о'+'г'+'л'+'а'+'с'+'и'+'е'+'\x20'+'с'+'\x20'+'о'+'ф'+'е'+'р'+'т'+'о'+'й'+'\x20'+'и'+'\x20'+'п'+'о'+'л'+'и'+'т'+'и'+'к'+'о'+'й'+'\x20'+'п'+'р'+'и'+'в'+'а'+'т'+'н'+'о'+'с'+'т'+'и'+'.','e'+'r'+'r');return;}if(Date['n'+'o'+'w']()-_0xfc3d94<0xbb8)return;_0xfc3d94=Date['n'+'o'+'w']();var _0x42ffe6=Math['r'+'o'+'u'+'n'+'d'](_0x2fc0ad['p'+'r'+'i'+'c'+'e']*(0x64-_0x1adbb8)/0x64),_0x2816c7='З'+'а'+'к'+'а'+'з'+'\x20'+'T'+'H'+'E'+'\x20'+'L'+'A'+'R'+'P'+'\x20'+'T'+'R'+'I'+'A'+'D'+'\x0a'+'И'+'м'+'я'+':'+'\x20'+_0x48ba34+('\x0a'+'К'+'о'+'н'+'т'+'а'+'к'+'т'+':'+'\x20')+_0x80e34f+('\x0a'+'Р'+'а'+'з'+'м'+'е'+'р'+':'+'\x20')+_0x33a6fc+('\x0a'+'С'+'к'+'и'+'д'+'к'+'а'+':'+'\x20')+_0x1adbb8+('%'+'\x0a'+'И'+'т'+'о'+'г'+'о'+':'+'\x20')+_0x42ffe6+'\x20'+_0x2fc0ad['c'+'u'+'r'+'r'+'e'+'n'+'c'+'y'];if(_0x2fc0ad['t'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'U'+'s'+'e'+'r']){var _0x61d8be='h'+'t'+'t'+'p'+'s'+':'+'/'+'/'+'t'+'.'+'m'+'e'+'/'+encodeURIComponent(_0x2fc0ad['t'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'U'+'s'+'e'+'r'])+('?'+'t'+'e'+'x'+'t'+'=')+encodeURIComponent(_0x2816c7);window['o'+'p'+'e'+'n'](_0x61d8be,'_'+'b'+'l'+'a'+'n'+'k','n'+'o'+'o'+'p'+'e'+'n'+'e'+'r'+','+'n'+'o'+'r'+'e'+'f'+'e'+'r'+'r'+'e'+'r'),_0x23b1b8(_0x517ebe,'О'+'т'+'к'+'р'+'о'+'е'+'т'+'с'+'я'+'\x20'+'T'+'e'+'l'+'e'+'g'+'r'+'a'+'m'+'.'+'\x20'+'О'+'т'+'п'+'р'+'а'+'в'+'ь'+'т'+'е'+'\x20'+'с'+'о'+'о'+'б'+'щ'+'е'+'н'+'и'+'е'+','+'\x20'+'п'+'о'+'к'+'а'+'\x20'+'о'+'н'+'о'+'\x20'+'н'+'е'+'\x20'+'о'+'т'+'п'+'р'+'а'+'в'+'л'+'е'+'н'+'о'+','+'\x20'+'з'+'а'+'к'+'а'+'з'+'\x20'+'н'+'е'+'\x20'+'п'+'р'+'и'+'н'+'я'+'т'+'.','o'+'k');}else _0x556cf5(_0x2816c7)['t'+'h'+'e'+'n'](function(){_0x23b1b8(_0x517ebe,'С'+'о'+'о'+'б'+'щ'+'е'+'н'+'и'+'е'+'\x20'+'с'+'к'+'о'+'п'+'и'+'р'+'о'+'в'+'а'+'н'+'о'+'.'+'\x20'+'О'+'т'+'п'+'р'+'а'+'в'+'ь'+'т'+'е'+'\x20'+'е'+'г'+'о'+'\x20'+'п'+'р'+'о'+'д'+'а'+'в'+'ц'+'у'+','+'\x20'+'п'+'о'+'к'+'а'+'\x20'+'о'+'н'+'о'+'\x20'+'н'+'е'+'\x20'+'о'+'т'+'п'+'р'+'а'+'в'+'л'+'е'+'н'+'о'+','+'\x20'+'з'+'а'+'к'+'а'+'з'+'\x20'+'н'+'е'+'\x20'+'п'+'р'+'и'+'н'+'я'+'т'+'.','o'+'k');},function(){_0x23b1b8(_0x517ebe,_0x2816c7,'');});});var _0xb97f9a=_0x66c27a('#'+'r'+'e'+'t'+'u'+'r'+'n'+'-'+'f'+'o'+'r'+'m'),_0x12f37e=_0x66c27a('#'+'r'+'e'+'t'+'u'+'r'+'n'+'-'+'o'+'u'+'t'),_0x1e85f7=_0x66c27a('#'+'r'+'e'+'t'+'u'+'r'+'n'+'-'+'t'+'e'+'x'+'t'),_0x54b982=_0x66c27a('#'+'r'+'-'+'m'+'s'+'g');_0xb97f9a['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('s'+'u'+'b'+'m'+'i'+'t',function(_0x5f36a2){_0x5f36a2['p'+'r'+'e'+'v'+'e'+'n'+'t'+'D'+'e'+'f'+'a'+'u'+'l'+'t']();var _0x389487=_0xb97f9a['e'+'l'+'e'+'m'+'e'+'n'+'t'+'s'];if(_0x389487['w'+'e'+'b'+'s'+'i'+'t'+'e']['v'+'a'+'l'+'u'+'e'])return;var _0x6a328f={'fio':_0x27652c(_0x389487['f'+'i'+'o']['v'+'a'+'l'+'u'+'e'],0x78),'order':_0x27652c(_0x389487['o'+'r'+'d'+'e'+'r']['v'+'a'+'l'+'u'+'e'],0x3c),'contact':_0x27652c(_0x389487['c'+'o'+'n'+'t'+'a'+'c'+'t']['v'+'a'+'l'+'u'+'e'],0x64),'reason':_0x27652c(_0x389487['r'+'e'+'a'+'s'+'o'+'n']['v'+'a'+'l'+'u'+'e'],0x3c),'comment':_0x27652c(_0x389487['c'+'o'+'m'+'m'+'e'+'n'+'t']['v'+'a'+'l'+'u'+'e'],0x1f4),'refund':_0x27652c(_0x389487['r'+'e'+'f'+'u'+'n'+'d']['v'+'a'+'l'+'u'+'e'],0x50)};if(!_0x6a328f['f'+'i'+'o']||!_0x6a328f['o'+'r'+'d'+'e'+'r']||!_0x6a328f['c'+'o'+'n'+'t'+'a'+'c'+'t']||!_0x6a328f['r'+'e'+'a'+'s'+'o'+'n']||!_0x6a328f['r'+'e'+'f'+'u'+'n'+'d']){_0x23b1b8(_0x54b982,'З'+'а'+'п'+'о'+'л'+'н'+'и'+'т'+'е'+'\x20'+'в'+'с'+'е'+'\x20'+'о'+'б'+'я'+'з'+'а'+'т'+'е'+'л'+'ь'+'н'+'ы'+'е'+'\x20'+'п'+'о'+'л'+'я'+'.','e'+'r'+'r'),_0x12f37e['h'+'i'+'d'+'d'+'e'+'n']=![];return;}var _0x344de9='З'+'а'+'я'+'в'+'л'+'е'+'н'+'и'+'е'+'\x20'+'н'+'а'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'\x20'+'т'+'о'+'в'+'а'+'р'+'а'+'\x0a'+'\x0a'+('К'+'о'+'м'+'у'+':'+'\x20')+_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['n'+'a'+'m'+'e']+('\x20'+'('+'И'+'Н'+'Н'+'\x20')+_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['i'+'n'+'n']+(')'+'\x0a')+('О'+'т'+':'+'\x20')+_0x6a328f['f'+'i'+'o']+'\x0a'+('К'+'о'+'н'+'т'+'а'+'к'+'т'+':'+'\x20')+_0x6a328f['c'+'o'+'n'+'t'+'a'+'c'+'t']+'\x0a'+('Д'+'а'+'т'+'а'+':'+'\x20')+new Date()['t'+'o'+'L'+'o'+'c'+'a'+'l'+'e'+'D'+'a'+'t'+'e'+'S'+'t'+'r'+'i'+'n'+'g']('r'+'u'+'-'+'R'+'U')+('\x0a'+'\x0a')+('П'+'р'+'о'+'ш'+'у'+'\x20'+'п'+'р'+'и'+'н'+'я'+'т'+'ь'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'\x20'+'т'+'о'+'в'+'а'+'р'+'а'+'\x20'+'T'+'H'+'E'+'\x20'+'L'+'A'+'R'+'P'+'\x20'+'T'+'R'+'I'+'A'+'D'+'\x20'+'('+'ф'+'у'+'т'+'б'+'о'+'л'+'к'+'а'+')'+'\x20'+'п'+'о'+'\x20'+'з'+'а'+'к'+'а'+'з'+'у'+':'+'\x20')+_0x6a328f['o'+'r'+'d'+'e'+'r']+('.'+'\x0a')+('П'+'р'+'и'+'ч'+'и'+'н'+'а'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'а'+':'+'\x20')+_0x6a328f['r'+'e'+'a'+'s'+'o'+'n']+('.'+'\x0a')+(_0x6a328f['c'+'o'+'m'+'m'+'e'+'n'+'t']?'К'+'о'+'м'+'м'+'е'+'н'+'т'+'а'+'р'+'и'+'й'+':'+'\x20'+_0x6a328f['c'+'o'+'m'+'m'+'e'+'n'+'t']+'\x0a':'')+('С'+'п'+'о'+'с'+'о'+'б'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'а'+'\x20'+'д'+'е'+'н'+'е'+'ж'+'н'+'ы'+'х'+'\x20'+'с'+'р'+'е'+'д'+'с'+'т'+'в'+':'+'\x20')+_0x6a328f['r'+'e'+'f'+'u'+'n'+'d']+('.'+'\x0a'+'\x0a')+('Т'+'о'+'в'+'а'+'р'+'\x20'+'н'+'е'+'\x20'+'и'+'с'+'п'+'о'+'л'+'ь'+'з'+'о'+'в'+'а'+'л'+'с'+'я'+','+'\x20'+'т'+'о'+'в'+'а'+'р'+'н'+'ы'+'й'+'\x20'+'в'+'и'+'д'+'\x20'+'и'+'\x20'+'я'+'р'+'л'+'ы'+'к'+'и'+'\x20'+'с'+'о'+'х'+'р'+'а'+'н'+'е'+'н'+'ы'+'.'+'\x0a')+('Н'+'о'+'м'+'е'+'р'+'\x20'+'н'+'а'+'к'+'л'+'а'+'д'+'н'+'о'+'й'+'\x20'+'С'+'Д'+'Э'+'К'+'\x20'+'д'+'л'+'я'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+'а'+'\x20'+'п'+'р'+'и'+'ш'+'л'+'ю'+'\x20'+'д'+'о'+'п'+'о'+'л'+'н'+'и'+'т'+'е'+'л'+'ь'+'н'+'о'+'.'+'\x0a'+'\x0a')+('П'+'о'+'д'+'п'+'и'+'с'+'ь'+':'+'\x20')+_0x6a328f['f'+'i'+'o'];_0x1e85f7['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']=_0x344de9,_0x12f37e['h'+'i'+'d'+'d'+'e'+'n']=![],_0x23b1b8(_0x54b982,'');var _0x5a5c14='З'+'а'+'я'+'в'+'л'+'е'+'н'+'и'+'е'+'\x20'+'н'+'а'+'\x20'+'в'+'о'+'з'+'в'+'р'+'а'+'т'+','+'\x20'+'з'+'а'+'к'+'а'+'з'+'\x20'+_0x6a328f['o'+'r'+'d'+'e'+'r'];_0x66c27a('#'+'r'+'-'+'m'+'a'+'i'+'l')['h'+'r'+'e'+'f']='m'+'a'+'i'+'l'+'t'+'o'+':'+encodeURIComponent(_0x2fc0ad['s'+'e'+'l'+'l'+'e'+'r']['e'+'m'+'a'+'i'+'l'])['r'+'e'+'p'+'l'+'a'+'c'+'e'](/%40/g,'@')+('?'+'s'+'u'+'b'+'j'+'e'+'c'+'t'+'=')+encodeURIComponent(_0x5a5c14)+('&'+'b'+'o'+'d'+'y'+'=')+encodeURIComponent(_0x344de9),_0x12f37e['s'+'c'+'r'+'o'+'l'+'l'+'I'+'n'+'t'+'o'+'V'+'i'+'e'+'w']({'behavior':'s'+'m'+'o'+'o'+'t'+'h'});}),_0x66c27a('#'+'r'+'-'+'c'+'o'+'p'+'y')['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('c'+'l'+'i'+'c'+'k',function(){_0x556cf5(_0x1e85f7['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t'])['t'+'h'+'e'+'n'](function(){_0x23b1b8(_0x54b982,'С'+'к'+'о'+'п'+'и'+'р'+'о'+'в'+'а'+'н'+'о'+'.','o'+'k');},function(){_0x23b1b8(_0x54b982,'Н'+'е'+'\x20'+'у'+'д'+'а'+'л'+'о'+'с'+'ь'+'\x20'+'с'+'к'+'о'+'п'+'и'+'р'+'о'+'в'+'а'+'т'+'ь'+','+'\x20'+'в'+'ы'+'д'+'е'+'л'+'и'+'т'+'е'+'\x20'+'т'+'е'+'к'+'с'+'т'+'\x20'+'в'+'р'+'у'+'ч'+'н'+'у'+'ю'+'.','e'+'r'+'r');});}),_0x66c27a('#'+'r'+'-'+'t'+'x'+'t')['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('c'+'l'+'i'+'c'+'k',function(){var _0x8e36bf=URL['c'+'r'+'e'+'a'+'t'+'e'+'O'+'b'+'j'+'e'+'c'+'t'+'U'+'R'+'L'](new Blob([_0x1e85f7['t'+'e'+'x'+'t'+'C'+'o'+'n'+'t'+'e'+'n'+'t']],{'type':'t'+'e'+'x'+'t'+'/'+'p'+'l'+'a'+'i'+'n'+';'+'c'+'h'+'a'+'r'+'s'+'e'+'t'+'='+'u'+'t'+'f'+'-'+'8'})),_0x150c95=document['c'+'r'+'e'+'a'+'t'+'e'+'E'+'l'+'e'+'m'+'e'+'n'+'t']('a');_0x150c95['h'+'r'+'e'+'f']=_0x8e36bf,_0x150c95['d'+'o'+'w'+'n'+'l'+'o'+'a'+'d']='z'+'a'+'y'+'a'+'v'+'l'+'e'+'n'+'i'+'e'+'-'+'n'+'a'+'-'+'v'+'o'+'z'+'v'+'r'+'a'+'t'+'.'+'t'+'x'+'t',document['b'+'o'+'d'+'y']['a'+'p'+'p'+'e'+'n'+'d'+'C'+'h'+'i'+'l'+'d'](_0x150c95),_0x150c95['c'+'l'+'i'+'c'+'k'](),_0x150c95['r'+'e'+'m'+'o'+'v'+'e'](),setTimeout(function(){URL['r'+'e'+'v'+'o'+'k'+'e'+'O'+'b'+'j'+'e'+'c'+'t'+'U'+'R'+'L'](_0x8e36bf);},0x3e8);}),_0x66c27a('#'+'r'+'-'+'p'+'r'+'i'+'n'+'t')['a'+'d'+'d'+'E'+'v'+'e'+'n'+'t'+'L'+'i'+'s'+'t'+'e'+'n'+'e'+'r']('c'+'l'+'i'+'c'+'k',function(){window['p'+'r'+'i'+'n'+'t']();}),_0x3ba067('['+'d'+'a'+'t'+'a'+'-'+'c'+'d'+'e'+'k'+']')['f'+'o'+'r'+'E'+'a'+'c'+'h'](function(_0x459ef4){var _0x49625c=_0x459ef4['g'+'e'+'t'+'A'+'t'+'t'+'r'+'i'+'b'+'u'+'t'+'e']('d'+'a'+'t'+'a'+'-'+'c'+'d'+'e'+'k'),_0x378f3c=_0x2fc0ad['c'+'d'+'e'+'k'][_0x49625c];if(!/^https:\/\/([a-z0-9-]+\.)*cdek\.ru\//i['t'+'e'+'s'+'t'](_0x378f3c||'')){_0x459ef4['h'+'i'+'d'+'d'+'e'+'n']=!![];return;}_0x459ef4['h'+'r'+'e'+'f']=_0x378f3c,_0x459ef4['t'+'a'+'r'+'g'+'e'+'t']='_'+'b'+'l'+'a'+'n'+'k',_0x459ef4['r'+'e'+'l']='n'+'o'+'o'+'p'+'e'+'n'+'e'+'r'+'\x20'+'n'+'o'+'r'+'e'+'f'+'e'+'r'+'r'+'e'+'r';});}());
+(function () {
+  'use strict';
+  var S = window.SHOP;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  // ---------- утилиты ----------
+  // Чистим пользовательский ввод: без управляющих символов, с ограничением длины.
+  function clean(v, max) {
+    return String(v == null ? '' : v).replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max || 200);
+  }
+  function rub(n) { return n.toLocaleString('ru-RU') + ' ' + S.currency; }
+  function setMsg(el, text, cls) { el.textContent = text; el.className = 'muted ' + (cls || ''); }
+  function sha256(str) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(str)).then(function (b) {
+      return Array.prototype.map.call(new Uint8Array(b), function (x) { return x.toString(16).padStart(2, '0'); }).join('');
+    });
+  }
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text);
+    return new Promise(function (res, rej) {
+      var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
+      try { document.execCommand('copy') ? res() : rej(); } catch (e) { rej(e); } t.remove();
+    });
+  }
+
+  // ---------- данные продавца и даты ----------
+  var sellerMap = { name: S.seller.name, inn: S.seller.inn, ogrnip: S.seller.ogrnip, email: S.seller.email, phone: S.seller.phone, city: S.seller.city };
+  Object.keys(sellerMap).forEach(function (k) {
+    $$('.seller-' + k).forEach(function (el) { el.textContent = sellerMap[k]; });
+  });
+  var today = new Date().toLocaleDateString('ru-RU');
+  $$('.today').forEach(function (el) { el.textContent = today; });
+  $('#price-main').textContent = rub(S.price);
+  $('#price-spec').textContent = rub(S.price);
+  $('#return-addr').textContent = 'Получатель возврата:\n' + S.seller.returnAddress;
+  if (S.telegramUser) {
+    var a = document.createElement('a');
+    a.href = 'https://t.me/' + encodeURIComponent(S.telegramUser);
+    a.rel = 'noopener noreferrer'; a.target = '_blank';
+    a.textContent = '@' + S.telegramUser;
+    var tg = $('#tg-line'); tg.textContent = ''; tg.appendChild(a);
+  }
+
+  // ---------- лексикон ----------
+  var LEX = [
+    ['PSL', 'шкала оценки внешности по форуму PSL'],
+    ['HTN', 'high-tier normie, нормис высокого уровня'],
+    ['MTN', 'mid-tier normie, нормис среднего уровня'],
+    ['LTN', 'low-tier normie, нормис низкого уровня'],
+    ['CHAD', 'эталон привлекательного мужчины в сленге'],
+    ['MOG', 'превзойти кого-то внешностью'],
+    ['LOOKSMAX', 'прокачка внешности всеми способами'],
+    ['MEWING', 'постановка языка ради «правильной» челюсти'],
+    ['CT', 'canthal tilt, наклон линии глаз'],
+    ['GA', 'gonial angle, угол нижней челюсти'],
+    ['FWHR', 'отношение ширины лица к высоте'],
+    ['IPD', 'расстояние между зрачками'],
+    ['PFL', 'длина глазной щели'],
+    ['UEE', 'открытость верхнего века'],
+    ['NW', 'шкала Норвуда, про залысины'],
+    ['SMV', 'sexual market value, «рыночная стоимость»']
+  ];
+  var grid = $('#lex-grid');
+  var marq = $('#marquee');
+  function addTagSet() {
+    LEX.forEach(function (p) { var s = document.createElement('span'); s.textContent = p[0]; marq.appendChild(s); });
+  }
+  addTagSet(); addTagSet(); // дважды для бесшовной прокрутки
+  LEX.forEach(function (p) {
+    var c = document.createElement('div'); c.className = 'card';
+    var b = document.createElement('b'); b.textContent = p[0];
+    var s = document.createElement('span'); s.textContent = p[1];
+    c.appendChild(b); c.appendChild(s); grid.appendChild(c);
+  });
+
+  // ---------- роутер вкладок ----------
+  var routes = $$('[data-route]').map(function (s) { return s.getAttribute('data-route'); });
+  function show() {
+    var h = location.hash.replace(/^#\/?/, '');
+    var r = routes.indexOf(h) > -1 ? h : 'home';
+    $$('[data-route]').forEach(function (s) { s.hidden = s.getAttribute('data-route') !== r; });
+    $$('.bar [data-nav]').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-nav') === r); });
+    if (r !== 'home' || routes.indexOf(h) > -1 || !h) window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', show);
+  show();
+  $$('[data-scroll]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var t = document.getElementById(a.getAttribute('data-scroll'));
+      if (t) t.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // ---------- заказ ----------
+  var discount = 0;
+  var form = $('#order-form');
+  function updateTotal() { $('#total').textContent = rub(Math.round(S.price * (100 - discount) / 100)); }
+  updateTotal();
+
+  $('#promo-apply').addEventListener('click', function () {
+    var code = clean(form.elements.promo.value, 40).toUpperCase();
+    var msg = $('#promo-msg');
+    if (!code) { discount = 0; updateTotal(); setMsg(msg, ''); return; }
+    sha256(code).then(function (h) {
+      if (Object.prototype.hasOwnProperty.call(S.promos, h)) {
+        discount = Math.min(90, Math.max(0, +S.promos[h] || 0));
+        setMsg(msg, 'Промокод применён: скидка ' + discount + '%.', 'ok');
+      } else {
+        discount = 0; setMsg(msg, 'Такого промокода нет.', 'err');
+      }
+      updateTotal();
+    });
+  });
+
+  var lastSend = 0;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = $('#order-msg');
+    var f = form.elements;
+    if (f.website.value) return; // ловушка для ботов
+    var name = clean(f.name.value, 80), contact = clean(f.contact.value, 80), size = clean(f.size.value, 4);
+    if (!name || !contact || ['S', 'M', 'L', 'XL'].indexOf(size) < 0) { setMsg(msg, 'Заполните имя, контакт и размер.', 'err'); return; }
+    if (!f.agree.checked) { setMsg(msg, 'Нужно согласие с офертой и политикой приватности.', 'err'); return; }
+    if (Date.now() - lastSend < 3000) return; // от двойных кликов и ботов
+    lastSend = Date.now();
+    var total = Math.round(S.price * (100 - discount) / 100);
+    var text = 'Заказ THE LARP TRIAD\nИмя: ' + name + '\nКонтакт: ' + contact + '\nРазмер: ' + size +
+      '\nСкидка: ' + discount + '%\nИтого: ' + total + ' ' + S.currency;
+    if (S.telegramUser) {
+      var url = 'https://t.me/' + encodeURIComponent(S.telegramUser) + '?text=' + encodeURIComponent(text);
+      window.open(url, '_blank', 'noopener,noreferrer');
+      setMsg(msg, 'Откроется Telegram. Отправьте сообщение, пока оно не отправлено, заказ не принят.', 'ok');
+    } else {
+      copyText(text).then(function () {
+        setMsg(msg, 'Сообщение скопировано. Отправьте его продавцу, пока оно не отправлено, заказ не принят.', 'ok');
+      }, function () { setMsg(msg, text, ''); });
+    }
+  });
+
+  // ---------- возврат ----------
+  var rform = $('#return-form'), rout = $('#return-out'), rtext = $('#return-text');
+  var rmsg = $('#r-msg');
+  rform.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = rform.elements;
+    if (f.website.value) return; // ловушка для ботов
+    var v = {
+      fio: clean(f.fio.value, 120), order: clean(f.order.value, 60), contact: clean(f.contact.value, 100),
+      reason: clean(f.reason.value, 60), comment: clean(f.comment.value, 500), refund: clean(f.refund.value, 80)
+    };
+    if (!v.fio || !v.order || !v.contact || !v.reason || !v.refund) { setMsg(rmsg, 'Заполните все обязательные поля.', 'err'); rout.hidden = false; return; }
+    var text =
+      'Заявление на возврат товара\n\n' +
+      'Кому: ' + S.seller.name + ' (ИНН ' + S.seller.inn + ')\n' +
+      'От: ' + v.fio + '\n' +
+      'Контакт: ' + v.contact + '\n' +
+      'Дата: ' + new Date().toLocaleDateString('ru-RU') + '\n\n' +
+      'Прошу принять возврат товара THE LARP TRIAD (футболка) по заказу: ' + v.order + '.\n' +
+      'Причина возврата: ' + v.reason + '.\n' +
+      (v.comment ? 'Комментарий: ' + v.comment + '\n' : '') +
+      'Способ возврата денежных средств: ' + v.refund + '.\n\n' +
+      'Товар не использовался, товарный вид и ярлыки сохранены.\n' +
+      'Номер накладной СДЭК для возврата пришлю дополнительно.\n\n' +
+      'Подпись: ' + v.fio;
+    rtext.textContent = text; rout.hidden = false; setMsg(rmsg, '');
+    var subj = 'Заявление на возврат, заказ ' + v.order;
+    $('#r-mail').href = 'mailto:' + encodeURIComponent(S.seller.email).replace(/%40/g, '@') +
+      '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(text);
+    rout.scrollIntoView({ behavior: 'smooth' });
+  });
+  $('#r-copy').addEventListener('click', function () {
+    copyText(rtext.textContent).then(function () { setMsg(rmsg, 'Скопировано.', 'ok'); }, function () { setMsg(rmsg, 'Не удалось скопировать, выделите текст вручную.', 'err'); });
+  });
+  $('#r-txt').addEventListener('click', function () {
+    var url = URL.createObjectURL(new Blob([rtext.textContent], { type: 'text/plain;charset=utf-8' }));
+    var a = document.createElement('a'); a.href = url; a.download = 'zayavlenie-na-vozvrat.txt';
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  });
+  $('#r-print').addEventListener('click', function () { window.print(); });
+
+  // ---------- кнопки СДЭК ----------
+  $$('[data-cdek]').forEach(function (a) {
+    var key = a.getAttribute('data-cdek');
+    var url = S.cdek[key];
+    if (!/^https:\/\/([a-z0-9-]+\.)*cdek\.ru\//i.test(url || '')) { a.hidden = true; return; } // только официальный домен
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+  });
+
+  // ---------- музыка ----------
+  // Браузеры запрещают автозапуск со звуком, поэтому музыка стартует при первом
+  // касании или клике по странице. Кнопка в углу включает и выключает звук.
+  var bgm = $('#bgm'), mbtn = $('#music');
+  if (bgm && mbtn) {
+    var userOff = false;
+    function setUi(on) {
+      mbtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      mbtn.setAttribute('aria-label', on ? 'Выключить музыку' : 'Включить музыку');
+    }
+    function play() {
+      bgm.volume = 0.5;
+      try { bgm.load(); } catch (e) {}
+      var p = bgm.play();
+      if (p && p.then) p.then(function () { setUi(true); mbtn.title = 'Музыка'; }, function (err) {
+        setUi(false);
+        if (err && err.name === 'NotSupportedError') mbtn.title = 'Файл музыки не найден или не поддерживается';
+      });
+    }
+    function firstGesture(e) {
+      if (mbtn.contains(e.target)) return; // клик по самой кнопке обрабатывает её обработчик
+      if (!userOff && bgm.paused) play();
+      ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.removeEventListener(t, firstGesture); });
+    }
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.addEventListener(t, firstGesture, { passive: true }); });
+    mbtn.addEventListener('click', function () {
+      if (bgm.paused) { userOff = false; play(); } else { userOff = true; bgm.pause(); setUi(false); }
+      ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.removeEventListener(t, firstGesture); });
+    });
+  }
+})();

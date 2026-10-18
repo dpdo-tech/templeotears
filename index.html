@@ -245,7 +245,12 @@
 <button class="music" id="music" type="button" aria-pressed="false" aria-label="Включить музыку" title="Музыка">
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path class="note" d="M9 18V6l10-2v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/><path class="mute" d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 </button>
-<audio id="bgm" src="music.mp3" loop preload="none"></audio>
+<audio id="bgm" loop preload="none">
+  <source src="music.mp3" type="audio/mpeg">
+  <source src="music.m4a" type="audio/mp4">
+  <source src="music.ogg" type="audio/ogg">
+  <source src="music.wav" type="audio/wav">
+</audio>
 
 <script src="config.js"></script>
 <script src="protect.js"></script>

@@ -30,7 +30,7 @@ window.SHOP = {
   //   crypto.subtle.digest('SHA-256', new TextEncoder().encode('МОЙКОД'))
   //     .then(b => console.log([...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('')))
   // Код вводится как есть, регистр не учитывается (приводится к верхнему).
-  promos: {АБОБА},
+  promos: {'АБОБА':10},
 
   // Ссылки на официальные страницы СДЭК (при необходимости поправьте под актуальные).
   cdek: {

@@ -3,452 +3,244 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noarchive">
+<meta name="theme-color" content="#0a0a0a">
 <title>THE LARP TRIAD</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Unbounded:wght@500;800&display=swap">
-<style>
-/* Layout: фиксированное фото справа на всю высоту, текст слева. На телефоне фото уходит под затемнение. */
-:root {
-  --ink: #0b0c0b;
-  --panel: #131512;
-  --paper: #ecebe2;
-  --muted: #a3a393;
-  --alien: #c9c7a0;
-  --line: #2b2d28;
-  --display: "Unbounded", "Arial Black", Impact, sans-serif;
-  --body: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: var(--body);
-  font-size: 15px;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
-/* фон-фотография */
-.bg {
-  position: fixed; inset: 0; z-index: -1;
-  background: var(--ink) url("bg.jpg") right center / auto 100% no-repeat;
-}
-.bg::after {
-  content: ""; position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, var(--ink) 0%, var(--ink) 54%, rgba(11,12,11,.7) 62%, rgba(11,12,11,.12) 100%);
-}
-@media (max-width: 760px) {
-  .bg { background-size: cover; background-position: 60% 20%; }
-  .bg::after { background: linear-gradient(180deg, rgba(11,12,11,.6) 0%, rgba(11,12,11,.74) 50%, var(--ink) 100%); }
-}
-
-.wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 48px); }
-
-/* шапка */
-header { padding-block: 20px; }
-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.mark { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 13px; letter-spacing: .04em; color: var(--paper); text-decoration: none; }
-.mark svg { width: 22px; height: 22px; }
-nav { display: flex; gap: 20px; flex-wrap: wrap; }
-nav a { color: var(--muted); text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; padding-block: 4px; border-bottom: 1px solid transparent; }
-nav a:hover { color: var(--paper); border-color: var(--paper); }
-a:focus-visible, button:focus-visible, input:focus-visible, label:focus-within { outline: 2px solid var(--alien); outline-offset: 3px; }
-
-.product {
-  display: grid;
-  place-items: center;
-}
-
-.tee {
-  width: min(420px, 90vw);
-  aspect-ratio: 1 / 1;              /* квадратная ячейка */
-  display: grid;
-  place-items: center;
-  background: rgba(11,12,11,.6);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.tee img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;               /* вся футболка влезает целиком */
-  display: block;
-}
-
-/* кнопка звука */
-header .wrap { padding-right: calc(clamp(16px, 4vw, 48px) + 56px); }
-.sound {
-  position: fixed; z-index: 10;
-  top: calc(14px + env(safe-area-inset-top, 0px)); right: 16px;
-  width: 44px; height: 44px; display: grid; place-items: center;
-  background: rgba(11,12,11,.8); color: var(--paper); border: 1px solid var(--line); border-radius: 50%;
-  cursor: pointer; padding: 0;
-}
-.sound:hover { border-color: var(--paper); }
-.sound svg { width: 22px; height: 22px; }
-.sound .off { display: none; }
-.sound[aria-pressed="false"] .on { display: none; }
-.sound[aria-pressed="false"] .off { display: block; }
-.sound.missing { opacity: .45; }
-
-/* hero */
-.hero { padding-block: clamp(48px, 10vw, 120px) clamp(56px, 9vw, 110px); }
-.hero .copy { max-width: 30rem; }
-.eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--alien); margin: 0 0 20px; }
-h1 { font-family: var(--display); font-weight: 800; font-size: clamp(38px, 7.2vw, 78px); line-height: .98; letter-spacing: -.02em; margin: 0 0 24px; text-wrap: balance; }
-h1 span { display: block; }
-.lead { color: var(--paper); max-width: 27rem; margin: 0 0 32px; }
-.cta-row { display: flex; align-items: center; gap: 20px 28px; flex-wrap: wrap; }
-.price { font-family: var(--display); font-weight: 500; font-size: 22px; font-variant-numeric: tabular-nums; }
-.btn {
-  display: inline-block; border: 1px solid var(--paper); background: var(--paper); color: var(--ink);
-  font: 600 14px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; text-decoration: none;
-  padding: 16px 28px; cursor: pointer;
-}
-.btn:hover { background: transparent; color: var(--paper); }
-.btn.ghost { background: transparent; color: var(--paper); }
-.btn.ghost:hover { background: var(--paper); color: var(--ink); }
-
-/* секции */
-section { padding-block: clamp(40px, 7vw, 88px); border-top: 1px solid var(--line); }
-h2 { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 3.4vw, 34px); letter-spacing: -.01em; margin: 0 0 28px; text-wrap: balance; }
-.label { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--alien); margin: 0 0 12px; }
-.glass { background: rgba(11,12,11,.82); }
-
-.manifest { max-width: 34rem; }
-.manifest p { margin: 0 0 18px; color: var(--paper); }
-.manifest p:last-child { color: var(--muted); }
-
-.product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: center; }
-.tee { background: var(--panel); border: 1px solid var(--line); padding: 24px; }
-.tee svg { display: block; width: 100%; height: auto; max-width: 420px; margin: 0 auto; }
-.specs { margin: 0; padding: 0; list-style: none; }
-.specs li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
-.specs li span:first-child { color: var(--muted); }
-.specs li span:last-child { text-align: right; }
-@media (max-width: 760px) { .product { grid-template-columns: minmax(0, 1fr); } }
-
-/* форма */
-.order { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: 40px; align-items: start; }
-@media (max-width: 860px) { .order { grid-template-columns: minmax(0, 1fr); } }
-form { display: grid; gap: 22px; padding: clamp(18px, 3vw, 28px); background: rgba(19,21,18,.92); border: 1px solid var(--line); }
-.field { display: grid; gap: 8px; min-width: 0; }
-.field > label, .field > .fl { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.opt { color: var(--alien); text-transform: none; letter-spacing: 0; }
-input[type="text"] {
-  width: 100%; background: var(--ink); color: var(--paper); border: 1px solid var(--line);
-  font: 400 15px var(--body); padding: 13px 14px; border-radius: 0;
-}
-input[type="text"]::placeholder { color: #6c6c60; }
-input[type="text"]:focus { border-color: var(--alien); outline: none; }
-.sizes { display: flex; gap: 10px; flex-wrap: wrap; border: 0; padding: 0; margin: 0; min-width: 0; }
-.sizes label { position: relative; cursor: pointer; }
-.sizes input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
-.sizes span { display: block; min-width: 52px; text-align: center; padding: 11px 14px; border: 1px solid var(--line); background: var(--ink); font-weight: 500; }
-.sizes input:checked + span { background: var(--paper); color: var(--ink); border-color: var(--paper); }
-.sizes input:focus-visible + span { outline: 2px solid var(--alien); outline-offset: 3px; }
-.promo-row { display: flex; gap: 10px; }
-.promo-row input { flex: 1; min-width: 0; text-transform: uppercase; }
-.promo-row .btn { padding: 13px 18px; font-size: 12px; }
-.hint { min-height: 1.5em; font-size: 13px; margin: 0; color: var(--muted); }
-.hint.ok { color: var(--alien); }
-.err { color: #ff9a8a; font-size: 13px; margin: 0; min-height: 1.4em; }
-.total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 18px; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; }
-.total strong { font-family: var(--display); font-weight: 500; font-size: 22px; }
-.total s { color: var(--muted); margin-right: 8px; }
-
-.aside p { margin: 0 0 14px; color: var(--muted); }
-.aside p strong { color: var(--paper); font-weight: 500; }
-
-.result { margin-top: 24px; padding: clamp(18px, 3vw, 28px); border: 1px solid var(--alien); background: rgba(19,21,18,.95); display: grid; gap: 14px; }
-.result pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 400 14px/1.6 var(--body); color: var(--paper); background: var(--ink); border: 1px solid var(--line); padding: 14px; }
-.result .row { display: flex; gap: 12px; flex-wrap: wrap; }
-.result p { margin: 0; color: var(--muted); }
-
-footer { border-top: 1px solid var(--line); padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--muted); font-size: 13px; }
-footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="bg" role="img" aria-label="Пришелец в футболке THE LARP TRIAD на перекрёстке"></div>
-
-<button type="button" class="sound" id="sound" aria-pressed="false" aria-label="Включить музыку" title="Музыка">
-  <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
-  <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M17 9l5 6"/><path d="M22 9l-5 6"/></svg>
-</button>
-
-<header>
-  <div class="wrap">
-    <a class="mark" href="#top" id="top">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 20H2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-      THE LARP TRIAD
-    </a>
-    <nav aria-label="Разделы">
-      <a href="#shirt">Футболка</a>
-      <a href="#manifest">Манифест</a>
-      <a href="#order">Заказ</a>
-    </nav>
-  </div>
+<a id="top"></a>
+<header class="bar">
+  <a class="logo" href="#/" data-nav="home"><span class="tri" aria-hidden="true"></span>THE LARP TRIAD</a>
+  <nav class="tabs" aria-label="Разделы">
+    <a href="#/" data-nav="home">Магазин</a>
+    <a href="#/delivery" data-nav="delivery">Доставка</a>
+    <a href="#/return" data-nav="return">Возврат</a>
+    <a href="#/contacts" data-nav="contacts">Контакты</a>
+    <a href="#/offer" data-nav="offer">Оферта</a>
+    <a href="#/privacy" data-nav="privacy">Приватность</a>
+  </nav>
 </header>
 
 <main>
-  <div class="wrap hero">
-    <div class="copy">
-      <p class="eyebrow">Performative / футболка</p>
-      <h1><span>THE</span><span>LARP</span><span>TRIAD</span></h1>
-      <p class="lead">Чёрная футболка с белым треугольником. Для тех, кто в курсе, что все вокруг играют роль, и всё равно выходит на улицу в образе.</p>
-      <div class="cta-row">
-        <span class="price" id="heroPrice">10 000 ₽</span>
-        <a class="btn" href="#order">Заказать</a>
-      </div>
-    </div>
+
+<!-- ============ МАГАЗИН ============ -->
+<section data-route="home">
+  <div class="hero">
+    <p class="kicker">Performative / футболка</p>
+    <h1>THELARPTRIAD</h1>
+    <p class="lead">Чёрная футболка с белым треугольником. Для тех, кто в курсе, что все вокруг играют роль, и всё равно выходит на улицу в образе.</p>
+    <p class="price-row"><span class="price" id="price-main"></span> <a class="btn" href="#order" data-scroll="order">Заказать</a></p>
+    <img class="tee" src="tee.png" alt="Чёрная футболка" draggable="false">
   </div>
 
-  <section id="shirt">
-    <div class="wrap product">
-      <div class="tee">
-        <img src="tee.png" alt="Чёрная футболка">
+  <div class="block">
+    <p class="kicker">Что это</p>
+    <h2>Одна футболка. Один треугольник.</h2>
+    <dl class="spec">
+      <div><dt>Цвет</dt><dd>Чёрный</dd></div>
+      <div><dt>Принт</dt><dd>Белый, на груди</dd></div>
+      <div><dt>Надпись</dt><dd>THE LARP TRIAD / PERFORMATIVE</dd></div>
+      <div><dt>Размеры</dt><dd>S, M, L, XL</dd></div>
+      <div><dt>Цена</dt><dd id="price-spec"></dd></div>
+    </dl>
+  </div>
+
+  <div class="block" id="lexicon">
+    <p class="kicker">Лексикон</p>
+    <h2>Все играют роль. Мы просто выучили словарь.</h2>
+    <div class="marquee" aria-hidden="true"><div class="marquee-in" id="marquee"></div></div>
+    <p class="muted">Сокращения из луксмакс-тусовки. Это шутка про игру в образ, и мы в ней же.</p>
+    <div class="grid" id="lex-grid"></div>
+  </div>
+
+  <div class="block" id="order">
+    <p class="kicker">Заказ</p>
+    <h2>Оформить заказ</h2>
+    <form id="order-form" class="form" autocomplete="off" novalidate>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Имя<input name="name" maxlength="80" required></label>
+      <label>Telegram или телефон<input name="contact" maxlength="80" required></label>
+      <label>Размер
+        <select name="size" required>
+          <option value="">Выберите</option>
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Промокод (необязательно)
+        <span class="inline"><input name="promo" maxlength="40"><button type="button" class="btn ghost" id="promo-apply">Применить</button></span>
+      </label>
+      <p class="muted" id="promo-msg" role="status"></p>
+      <p class="total">Итого <strong id="total"></strong></p>
+      <label class="check"><input type="checkbox" name="agree" required> Согласен с <a href="#/offer">офертой</a> и <a href="#/privacy">политикой приватности</a></label>
+      <button class="btn" type="submit">Оформить заказ</button>
+      <p class="muted" id="order-msg" role="status"></p>
+    </form>
+    <p class="note"><b>Как это работает.</b> Нажимаете «Оформить заказ», сайт собирает сообщение с вашими данными. Отправляете его в Telegram, дальше договариваемся об оплате и доставке. Пока вы не отправите это сообщение, заказ не принят. Данные не сохраняются на сайте.</p>
+  </div>
+</section>
+
+<!-- ============ ДОСТАВКА ============ -->
+<section data-route="delivery" hidden>
+  <div class="doc">
+    <h1>Условия доставки</h1>
+    <p class="muted">Редакция от <span class="today"></span></p>
+    <h3>1. Способ доставки</h3>
+    <p>Отправляем заказы службой СДЭК до пункта выдачи или курьером по России. Выбрать пункт выдачи, сроки и стоимость можно на официальной странице СДЭК: <a href="#" data-cdek="offices">карта пунктов</a> и <a href="#" data-cdek="calculator">калькулятор доставки</a>.</p>
+    <h3>2. Сроки</h3>
+    <p>Отправка в течение [3] рабочих дней после подтверждения оплаты. Срок в пути зависит от города и тарифа СДЭК, его показывает калькулятор.</p>
+    <h3>3. Стоимость</h3>
+    <p>Стоимость доставки рассчитывается по тарифам СДЭК и оплачивается покупателем, если иное не согласовано при заказе. Размер фиксируется до оплаты.</p>
+    <h3>4. Трек-номер</h3>
+    <p>После отправки мы пришлём номер накладной СДЭК. По нему посылку можно отследить на сайте перевозчика.</p>
+    <h3>5. Получение и осмотр</h3>
+    <p>Получить заказ можно при предъявлении паспорта и номера заказа. Проверьте упаковку и комплектность при получении. При повреждении упаковки составьте акт с сотрудником пункта выдачи.</p>
+    <h3>6. Срок хранения</h3>
+    <p>СДЭК хранит заказ в пункте выдачи ограниченное время. Если заказ не забрали, он возвращается отправителю, а повторная отправка оплачивается покупателем.</p>
+    <h3>7. Международная доставка</h3>
+    <p>Уточняется отдельно по запросу на <span class="seller-email"></span>.</p>
+  </div>
+</section>
+
+<!-- ============ ВОЗВРАТ ============ -->
+<section data-route="return" hidden>
+  <div class="doc">
+    <h1>Возврат</h1>
+    <p>Товар надлежащего качества можно вернуть в течение 7 дней после получения, если сохранены товарный вид, потребительские свойства и ярлыки. Это право закреплено в статье 26.1 Закона «О защите прав потребителей». Стоимость товара возвращается в течение 10 дней после получения нами возврата.</p>
+
+    <h3>Шаг 1. Заполните заявление</h3>
+    <form id="return-form" class="form" autocomplete="off" novalidate>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>ФИО<input name="fio" maxlength="120" required></label>
+      <label>Номер заказа или дата покупки<input name="order" maxlength="60" required></label>
+      <label>Телефон или e-mail для связи<input name="contact" maxlength="100" required></label>
+      <label>Причина возврата
+        <select name="reason" required>
+          <option value="">Выберите</option>
+          <option>Не подошёл размер</option>
+          <option>Не понравился товар</option>
+          <option>Брак или повреждение</option>
+          <option>Получил не тот товар</option>
+          <option>Другая причина</option>
+        </select>
+      </label>
+      <label>Комментарий<textarea name="comment" maxlength="500" rows="3"></textarea></label>
+      <label>Куда вернуть деньги
+        <select name="refund" required>
+          <option value="">Выберите</option>
+          <option>На карту, с которой оплачивал</option>
+          <option>По реквизитам, пришлю отдельно</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Сформировать заявление</button>
+    </form>
+
+    <div id="return-out" hidden>
+      <h3>Готовое заявление</h3>
+      <pre id="return-text" class="paper"></pre>
+      <div class="row">
+        <button class="btn ghost" id="r-copy" type="button">Скопировать</button>
+        <a class="btn ghost" id="r-mail" href="#">Отправить на e-mail</a>
+        <button class="btn ghost" id="r-txt" type="button">Скачать .txt</button>
+        <button class="btn ghost" id="r-print" type="button">Печать</button>
       </div>
-      <div>
-        <p class="label">Что это</p>
-        <h2>Одна футболка. Один треугольник.</h2>
-        <ul class="specs">
-          <li><span>Цвет</span><span>Чёрный</span></li>
-          <li><span>Принт</span><span>Белый, на груди</span></li>
-          <li><span>Надпись</span><span>THE LARP TRIAD / PERFORMATIVE</span></li>
-          <li><span>Размеры</span><span id="sizeList">S, M, L, XL</span></li>
-          <li><span>Цена</span><span id="specPrice">10 000 ₽</span></li>
-        </ul>
-      </div>
+      <p class="muted" id="r-msg" role="status"></p>
     </div>
-  </section>
 
-  <section id="manifest">
-    <div class="wrap">
-      <div class="manifest glass">
-        <p class="label">Манифест</p>
-        <h2>Все играют роль. Мы просто написали это на груди.</h2>
-        <p>Луксмаксинг, статусы, правильные кроссовки, правильные слова. Обычная игра в образ, только со сложным лицом.</p>
-        <p>Эта футболка не спорит с игрой. Она называет её по имени и носится с тем же серьёзным видом.</p>
-        <p>Если вы пришли сюда, чтобы оценить других, вы уже в треугольнике.</p>
-      </div>
+    <h3>Шаг 2. Отправьте посылку через СДЭК сами</h3>
+    <p>Мы не оформляем отправку за вас: вы сами выбираете удобный пункт выдачи или приёма, смотрите сроки и стоимость и оформляете отправление на официальном сайте СДЭК. Получателя и адрес возврата возьмите ниже.</p>
+    <div class="paper" id="return-addr"></div>
+    <div class="row">
+      <a class="btn" href="#" data-cdek="offices">Выбрать пункт СДЭК на карте</a>
+      <a class="btn ghost" href="#" data-cdek="calculator">Рассчитать доставку</a>
+      <a class="btn ghost" href="#" data-cdek="cabinet">Оформить в личном кабинете</a>
     </div>
-  </section>
+    <p class="muted">Кнопки открывают официальный сайт СДЭК в новой вкладке. После отправки пришлите нам номер накладной вместе с заявлением.</p>
+  </div>
+</section>
 
-  <section id="order">
-    <div class="wrap">
-      <p class="label">Заказ</p>
-      <h2>Оформить заказ</h2>
-      <div class="order">
-        <form id="orderForm" novalidate>
-          <div class="field">
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="name" autocomplete="name" placeholder="Как к вам обращаться">
-          </div>
-          <div class="field">
-            <label for="contact">Telegram или телефон</label>
-            <input type="text" id="contact" name="contact" autocomplete="off" placeholder="@username или +7…">
-          </div>
-          <div class="field">
-            <span class="fl" id="sizeLabel">Размер</span>
-            <fieldset class="sizes" id="sizes" aria-labelledby="sizeLabel"></fieldset>
-          </div>
-          <div class="field">
-            <label for="promo">Промокод <span class="opt">(необязательно)</span></label>
-            <div class="promo-row">
-              <input type="text" id="promo" name="promo" autocomplete="off" placeholder="Если есть">
-              <button type="button" class="btn ghost" id="promoBtn">Применить</button>
-            </div>
-            <p class="hint" id="promoHint" aria-live="polite"></p>
-          </div>
-          <div class="total">
-            <span>Итого</span>
-            <span id="total"></span>
-          </div>
-          <p class="err" id="err" role="alert"></p>
-          <button type="submit" class="btn">Оформить заказ</button>
-        </form>
+<!-- ============ КОНТАКТЫ ============ -->
+<section data-route="contacts" hidden>
+  <div class="doc">
+    <h1>Контакты</h1>
+    <dl class="spec">
+      <div><dt>Продавец</dt><dd class="seller-name"></dd></div>
+      <div><dt>ИНН</dt><dd class="seller-inn"></dd></div>
+      <div><dt>ОГРНИП</dt><dd class="seller-ogrnip"></dd></div>
+      <div><dt>E-mail</dt><dd class="seller-email"></dd></div>
+      <div><dt>Телефон</dt><dd class="seller-phone"></dd></div>
+      <div><dt>Город отправки</dt><dd class="seller-city"></dd></div>
+      <div><dt>Telegram</dt><dd id="tg-line">—</dd></div>
+    </dl>
+    <p class="muted">Отвечаем в рабочие дни, обычно в течение суток.</p>
+  </div>
+</section>
 
-        <div class="aside glass">
-          <p><strong>Как это работает.</strong> Нажимаете «Оформить заказ», сайт собирает сообщение с вашими данными. Отправляете его в Telegram, дальше договариваемся об оплате и доставке.</p>
-          <p>Промокод можно не вводить, заказ оформляется и без него.</p>
-        </div>
-      </div>
+<!-- ============ ОФЕРТА ============ -->
+<section data-route="offer" hidden>
+  <div class="doc">
+    <h1>Публичная оферта</h1>
+    <p class="muted">Редакция от <span class="today"></span></p>
+    <h3>1. Общие положения</h3>
+    <p>Настоящий документ является предложением заключить договор розничной купли-продажи дистанционным способом. Продавец: <span class="seller-name"></span>, ИНН <span class="seller-inn"></span>, ОГРНИП <span class="seller-ogrnip"></span>. Покупатель — физическое лицо, оформившее заказ на сайте.</p>
+    <h3>2. Предмет договора</h3>
+    <p>Продавец передаёт Покупателю товар, указанный в заказе: футболка THE LARP TRIAD, цвет чёрный, белый принт, размеры S, M, L, XL. Цена указана на сайте в рублях.</p>
+    <h3>3. Оформление и акцепт</h3>
+    <p>Договор считается заключённым, когда Покупатель отправил сообщение с заказом и Продавец подтвердил его и получил оплату. Акцептом оферты считается оплата заказа.</p>
+    <h3>4. Оплата</h3>
+    <p>Способ и реквизиты оплаты согласовываются при подтверждении заказа. Товар передаётся службе доставки после поступления оплаты.</p>
+    <h3>5. Доставка</h3>
+    <p>Условия, сроки и стоимость доставки описаны в разделе «Доставка». Риск случайной гибели товара переходит к Покупателю с момента получения.</p>
+    <h3>6. Возврат и обмен</h3>
+    <p>Покупатель вправе вернуть товар надлежащего качества в течение 7 дней после получения при сохранении товарного вида и ярлыков. Порядок описан в разделе «Возврат». Товар ненадлежащего качества возвращается или обменивается в порядке, предусмотренном Законом «О защите прав потребителей».</p>
+    <h3>7. Ответственность</h3>
+    <p>Стороны отвечают в соответствии с законодательством РФ. Продавец не отвечает за задержки по вине службы доставки.</p>
+    <h3>8. Персональные данные</h3>
+    <p>Обработка данных описана в <a href="#/privacy">политике приватности</a>.</p>
+    <h3>9. Реквизиты</h3>
+    <p><span class="seller-name"></span>, e-mail <span class="seller-email"></span>, телефон <span class="seller-phone"></span>.</p>
+  </div>
+</section>
 
-      <div class="result" id="result" hidden>
-        <p class="label" style="margin:0">Ваш заказ готов к отправке</p>
-        <pre id="orderText"></pre>
-        <div class="row">
-          <button type="button" class="btn" id="copyBtn">Скопировать</button>
-          <a class="btn ghost" id="tgLink" href="#" target="_blank" rel="noopener">Открыть Telegram</a>
-        </div>
-        <p id="copyNote" aria-live="polite">Пока вы не отправите это сообщение, заказ не принят.</p>
-      </div>
-    </div>
-  </section>
+<!-- ============ ПРИВАТНОСТЬ ============ -->
+<section data-route="privacy" hidden>
+  <div class="doc">
+    <h1>Политика приватности</h1>
+    <p class="muted">Редакция от <span class="today"></span></p>
+    <h3>1. Оператор</h3>
+    <p><span class="seller-name"></span>, ИНН <span class="seller-inn"></span>, e-mail <span class="seller-email"></span>.</p>
+    <h3>2. Какие данные собираем</h3>
+    <p>Имя, контакт для связи (Telegram или телефон), выбранный размер, при необходимости данные для доставки и возврата. Сайт сам не отправляет данные на сервер и не сохраняет их в браузере: сообщение с заказом вы отправляете сами.</p>
+    <h3>3. Зачем нужны данные</h3>
+    <p>Для обработки заказа, связи с вами, доставки и возврата.</p>
+    <h3>4. Передача третьим лицам</h3>
+    <p>Данные передаются только службе доставки (СДЭК) в объёме, нужном для отправки, и по требованию закона.</p>
+    <h3>5. Хранение</h3>
+    <p>Данные хранятся столько, сколько нужно для исполнения заказа и требований законодательства, после чего удаляются.</p>
+    <h3>6. Ваши права</h3>
+    <p>Вы можете запросить доступ к данным, их исправление или удаление, написав на <span class="seller-email"></span>.</p>
+    <h3>7. Cookies</h3>
+    <p>Сайт не использует cookies и сторонние трекеры.</p>
+  </div>
+</section>
+
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>THE LARP TRIAD</span>
-    <span>Performative</span>
-  </div>
+<footer class="foot">
+  <nav class="tabs" aria-label="Документы">
+    <a href="#/contacts">Контакты</a>
+    <a href="#/offer">Оферта</a>
+    <a href="#/privacy">Политика приватности</a>
+    <a href="#/return">Заявление на возврат</a>
+    <a href="#/delivery">Условия доставки</a>
+  </nav>
+  <p class="muted">THE LARP TRIAD Performative</p>
 </footer>
 
-<script>
-/* ===== НАСТРОЙКИ: меняйте здесь ===== */
-var CONFIG = {
-  price: 10000,                       // цена в рублях
-  sizes: ["S", "M", "L", "XL"],       // доступные размеры
-  telegram: "py3r0",              // ваш ник в Telegram без @
-  music: "music.mp3",           // путь к файлу с музыкой
-  musicVolume: 0.5,                   // громкость от 0 до 1
-  promoCodes: { "LARP10": 10, "TRIAD15": 15 }  // код: скидка в процентах
-};
-/* ==================================== */
-
-var $ = function (id) { return document.getElementById(id); };
-var appliedCode = null, discount = 0;
-
-function rub(n) { return n.toLocaleString("ru-RU").replace(/ /g, " ") + " ₽"; }
-
-function renderPrices() {
-  $("heroPrice").textContent = rub(CONFIG.price);
-  $("specPrice").textContent = rub(CONFIG.price);
-  $("sizeList").textContent = CONFIG.sizes.join(", ");
-  var final = Math.round(CONFIG.price * (100 - discount) / 100);
-  $("total").innerHTML = discount
-    ? "<s>" + rub(CONFIG.price) + "</s><strong>" + rub(final) + "</strong>"
-    : "<strong>" + rub(CONFIG.price) + "</strong>";
-  return final;
-}
-
-function renderSizes() {
-  var box = $("sizes");
-  CONFIG.sizes.forEach(function (s, i) {
-    var l = document.createElement("label");
-    var inp = document.createElement("input");
-    inp.type = "radio"; inp.name = "size"; inp.value = s; inp.id = "size-" + s;
-    if (i === 1 || CONFIG.sizes.length === 1) inp.checked = true;
-    var sp = document.createElement("span");
-    sp.textContent = s;
-    l.appendChild(inp); l.appendChild(sp);
-    box.appendChild(l);
-  });
-}
-
-function applyPromo() {
-  var raw = $("promo").value.trim().toUpperCase();
-  var hint = $("promoHint");
-  if (!raw) { appliedCode = null; discount = 0; hint.textContent = ""; hint.className = "hint"; renderPrices(); return; }
-  if (CONFIG.promoCodes.hasOwnProperty(raw)) {
-    appliedCode = raw; discount = CONFIG.promoCodes[raw];
-    hint.textContent = "Код принят, скидка " + discount + "%.";
-    hint.className = "hint ok";
-  } else {
-    appliedCode = null; discount = 0;
-    hint.textContent = "Такого кода нет. Можно оформить заказ без него.";
-    hint.className = "hint";
-  }
-  renderPrices();
-}
-
-$("promoBtn").addEventListener("click", applyPromo);
-$("promo").addEventListener("input", function () {
-  appliedCode = null; discount = 0; $("promoHint").textContent = ""; $("promoHint").className = "hint"; renderPrices();
-});
-$("promo").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); applyPromo(); } });
-
-$("orderForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  var name = $("name").value.trim(), contact = $("contact").value.trim();
-  var sizeEl = document.querySelector('input[name="size"]:checked');
-  if (!name || !contact) { $("err").textContent = "Заполните имя и контакт, чтобы мы могли с вами связаться."; return; }
-  if (!sizeEl) { $("err").textContent = "Выберите размер."; return; }
-  $("err").textContent = "";
-  if ($("promo").value.trim() && !appliedCode) applyPromo();
-  var final = renderPrices();
-  var lines = [
-    "Заказ: THE LARP TRIAD",
-    "Размер: " + sizeEl.value,
-    "Имя: " + name,
-    "Контакт: " + contact
-  ];
-  if (appliedCode) lines.push("Промокод: " + appliedCode + " (−" + discount + "%)");
-  lines.push("Сумма: " + rub(final));
-  var text = lines.join("\n");
-  $("orderText").textContent = text;
-  $("tgLink").href = "https://t.me/" + CONFIG.telegram + "?text=" + encodeURIComponent(text);
-  $("result").hidden = false;
-  $("copyNote").textContent = "Пока вы не отправите это сообщение, заказ не принят.";
-  $("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
-});
-
-$("copyBtn").addEventListener("click", function () {
-  var text = $("orderText").textContent;
-  function fallback() {
-    var r = document.createRange(); r.selectNodeContents($("orderText"));
-    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-    $("copyNote").textContent = "Текст выделен, нажмите «Копировать» в меню телефона или Ctrl+C.";
-  }
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(function () {
-      $("copyNote").textContent = "Скопировано. Отправьте сообщение в Telegram.";
-    }, fallback);
-  } else { fallback(); }
-});
-
-
-/* ===== Музыка ===== */
-(function () {
-  var btn = $("sound");
-  var audio = new Audio(CONFIG.music);
-  audio.loop = true; audio.volume = CONFIG.musicVolume; audio.preload = "auto";
-  var wanted = true, missing = false;
-  try { if (localStorage.getItem("larp-music") === "off") wanted = false; } catch (e) {}
-
-  function paint() {
-    var playing = !audio.paused && !missing;
-    btn.setAttribute("aria-pressed", playing ? "true" : "false");
-    btn.setAttribute("aria-label", playing ? "Выключить музыку" : "Включить музыку");
-    btn.title = missing ? "Файл музыки не найден (" + CONFIG.music + ")" : (playing ? "Выключить музыку" : "Включить музыку");
-    btn.classList.toggle("missing", missing);
-  }
-  function play() { var p = audio.play(); if (p && p.catch) p.catch(function () {}); }
-  function unlock() {
-    if (wanted && audio.paused && !missing) play();
-    ["pointerdown", "keydown", "touchstart"].forEach(function (t) { window.removeEventListener(t, unlock, true); });
-  }
-
-  audio.addEventListener("play", paint);
-  audio.addEventListener("pause", paint);
-  audio.addEventListener("error", function () { missing = true; paint(); });
-
-  btn.addEventListener("click", function (e) {
-    e.stopPropagation();
-    if (audio.paused) { wanted = true; play(); } else { wanted = false; audio.pause(); }
-    try { localStorage.setItem("larp-music", wanted ? "on" : "off"); } catch (err) {}
-  });
-
-  if (wanted) {
-    play(); /* браузеры часто блокируют автозапуск, тогда музыка стартует с первого касания */
-    ["pointerdown", "keydown", "touchstart"].forEach(function (t) { window.addEventListener(t, unlock, true); });
-  }
-  paint();
-})();
-
-renderSizes();
-renderPrices();
-</script>
-
+<script src="config.js"></script>
+<script src="protect.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

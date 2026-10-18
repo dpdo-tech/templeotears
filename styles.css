@@ -62,9 +62,17 @@ h3{margin:28px 0 8px;font-size:18px}
 .tee-pair{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
 .tee-pair .tee{width:min(100%,400px);margin:0}
 .contacts{position:relative;isolation:isolate}
-.contacts::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(10,10,10,.72),rgba(10,10,10,.88)),url(bg.jpg) center/cover no-repeat,url(bg.png) center/cover no-repeat,url(bg.webp) center/cover no-repeat;pointer-events:none}
 .music{position:fixed;right:16px;bottom:16px;z-index:20;width:48px;height:48px;border-radius:50%;border:1px solid #444;background:rgba(17,17,17,.9);color:#fff;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(8px)}
 .music:hover{border-color:#fff}
 .music .mute{display:block}
 .music[aria-pressed="true"] .mute{display:none}
 .music[aria-pressed="true"]{background:#fff;color:#000}
+
+.contacts::before{content:"";position:fixed;inset:0;z-index:-1;background:url(bg.jpg) center/cover no-repeat,url(bg.png) center/cover no-repeat,url(bg.webp) center/cover no-repeat;pointer-events:none}
+.contacts .doc{min-height:calc(100vh - 120px);display:flex;flex-direction:column;justify-content:flex-end}
+.contacts .doc>*{max-width:440px}
+.contacts .doc{padding-bottom:32px}
+.contacts .doc h1,.contacts .doc .spec,.contacts .doc .muted{background:rgba(10,10,10,.78);backdrop-filter:blur(6px)}
+.contacts .doc h1{margin:0;padding:16px 18px 6px;border-radius:14px 14px 0 0;font-size:clamp(28px,6vw,40px)}
+.contacts .doc .spec{padding:4px 18px}
+.contacts .doc .muted{margin:0;padding:8px 18px 14px;border-radius:0 0 14px 14px}

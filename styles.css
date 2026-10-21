@@ -70,3 +70,17 @@ h3{margin:28px 0 8px;font-size:18px}
 .contacts::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(10,10,10,.45),rgba(10,10,10,.45)),url(bg.jpg) center center/contain no-repeat,url(bg.png) center center/contain no-repeat,url(bg.webp) center center/contain no-repeat;pointer-events:none}
 .contacts .doc h1,.contacts .doc .spec,.contacts .doc .muted{text-shadow:0 1px 10px rgba(0,0,0,.9)}
 .contacts .doc p{color:#fff}
+
+.tee-pair .tee{pointer-events:auto;cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.94);display:flex;align-items:center;justify-content:center}
+.lb-stage{position:absolute;inset:0;overflow:hidden;touch-action:none;cursor:grab;display:flex;align-items:center;justify-content:center}
+.lb-stage.drag{cursor:grabbing}
+.lb-stage img{max-width:92vw;max-height:86vh;width:auto;height:auto;user-select:none;-webkit-user-drag:none;transform-origin:center center;will-change:transform;pointer-events:none}
+.lb-btn{position:absolute;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid #444;background:rgba(17,17,17,.85);color:#fff;font:26px/1 inherit;cursor:pointer;display:grid;place-items:center;padding:0}
+.lb-btn:hover{border-color:#fff}
+.lb-x{top:14px;right:14px}
+.lb-n{top:50%;margin-top:-22px}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-tools{position:absolute;z-index:2;bottom:48px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+.lb-tools .lb-btn{position:static;font-size:20px}
+.lb-hint{position:absolute;z-index:2;bottom:14px;left:0;right:0;margin:0;text-align:center;color:#8d8d8d;font-size:12px;padding:0 60px;pointer-events:none}

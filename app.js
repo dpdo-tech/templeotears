@@ -218,4 +218,71 @@
       ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.removeEventListener(t, firstGesture); });
     });
   }
+
+  // ---------- просмотр фото: приближение, сдвиг, листание ----------
+  var lb = $('#lb'), lbImg = $('#lb-img'), lbStage = $('#lb-stage');
+  var gallery = $$('.tee-pair .tee');
+  if (lb && lbImg && gallery.length) {
+    var cur = 0, sc = 1, tx = 0, ty = 0, MIN = 1, MAX = 6, ptrs = {}, lastDist = 0, lastMid = null, lastTap = 0, opener = null;
+    function apply() {
+      if (sc <= 1.001) { sc = 1; tx = 0; ty = 0; }
+      lbImg.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + sc + ')';
+    }
+    function setScale(ns, px, py) { // px, py: точка относительно центра окна
+      ns = Math.min(MAX, Math.max(MIN, ns));
+      tx = px - (px - tx) * (ns / sc); ty = py - (py - ty) * (ns / sc); sc = ns; apply();
+    }
+    function rel(e) { var r = lbStage.getBoundingClientRect(); return { x: e.clientX - r.left - r.width / 2, y: e.clientY - r.top - r.height / 2 }; }
+    function show(i) {
+      cur = (i + gallery.length) % gallery.length;
+      lbImg.src = gallery[cur].currentSrc || gallery[cur].src; lbImg.alt = gallery[cur].alt || '';
+      sc = 1; tx = 0; ty = 0; apply();
+      var multi = gallery.length > 1; $('#lb-prev').hidden = !multi; $('#lb-next').hidden = !multi;
+    }
+    function open(i) { opener = document.activeElement; lb.hidden = false; document.body.style.overflow = 'hidden'; show(i); $('#lb-x').focus(); }
+    function close() { lb.hidden = true; document.body.style.overflow = ''; ptrs = {}; if (opener && opener.focus) opener.focus(); }
+    gallery.forEach(function (img, i) {
+      img.tabIndex = 0; img.setAttribute('role', 'button');
+      img.addEventListener('click', function () { open(i); });
+      img.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+    });
+    $('#lb-x').addEventListener('click', close);
+    $('#lb-prev').addEventListener('click', function () { show(cur - 1); });
+    $('#lb-next').addEventListener('click', function () { show(cur + 1); });
+    $('#lb-in').addEventListener('click', function () { setScale(sc * 1.5, 0, 0); });
+    $('#lb-out').addEventListener('click', function () { setScale(sc / 1.5, 0, 0); });
+    $('#lb-reset').addEventListener('click', function () { sc = 1; apply(); });
+    lbStage.addEventListener('wheel', function (e) {
+      e.preventDefault(); var p = rel(e); setScale(sc * (e.deltaY < 0 ? 1.15 : 1 / 1.15), p.x, p.y);
+    }, { passive: false });
+    lbStage.addEventListener('dblclick', function (e) { var p = rel(e); if (sc > 1.01) { sc = 1; apply(); } else setScale(2.5, p.x, p.y); });
+    lbStage.addEventListener('pointerdown', function (e) {
+      lbStage.setPointerCapture(e.pointerId); ptrs[e.pointerId] = { x: e.clientX, y: e.clientY };
+      lbStage.classList.add('drag'); lastDist = 0;
+      if (e.pointerType === 'touch') { var now = Date.now(); if (now - lastTap < 300) { var p = rel(e); if (sc > 1.01) { sc = 1; apply(); } else setScale(2.5, p.x, p.y); } lastTap = now; }
+    });
+    lbStage.addEventListener('pointermove', function (e) {
+      if (!ptrs[e.pointerId]) return;
+      var prev = ptrs[e.pointerId]; ptrs[e.pointerId] = { x: e.clientX, y: e.clientY };
+      var ids = Object.keys(ptrs);
+      if (ids.length >= 2) { // щипок
+        var a = ptrs[ids[0]], b = ptrs[ids[1]], d = Math.hypot(a.x - b.x, a.y - b.y);
+        var r = lbStage.getBoundingClientRect(), mx = (a.x + b.x) / 2 - r.left - r.width / 2, my = (a.y + b.y) / 2 - r.top - r.height / 2;
+        if (lastDist) setScale(sc * d / lastDist, mx, my);
+        lastDist = d;
+      } else if (sc > 1) { tx += e.clientX - prev.x; ty += e.clientY - prev.y; apply(); }
+    });
+    function up(e) { delete ptrs[e.pointerId]; lastDist = 0; if (!Object.keys(ptrs).length) lbStage.classList.remove('drag'); }
+    lbStage.addEventListener('pointerup', up); lbStage.addEventListener('pointercancel', up);
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(cur - 1);
+      else if (e.key === 'ArrowRight') show(cur + 1);
+      else if (e.key === '+' || e.key === '=') setScale(sc * 1.3, 0, 0);
+      else if (e.key === '-') setScale(sc / 1.3, 0, 0);
+    });
+    window.addEventListener('hashchange', function () { if (!lb.hidden) close(); });
+  }
 })();

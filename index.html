@@ -8,9 +8,8 @@
 <meta name="robots" content="noarchive">
 <meta name="theme-color" content="#0a0a0a">
 <title>THE LARP TRIAD</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-64.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -246,6 +245,19 @@
   </nav>
   <p class="muted">THE LARP TRIAD Performative</p>
 </footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lb-btn lb-x" id="lb-x" type="button" aria-label="Закрыть">&times;</button>
+  <button class="lb-btn lb-n lb-prev" id="lb-prev" type="button" aria-label="Предыдущее фото">&lsaquo;</button>
+  <button class="lb-btn lb-n lb-next" id="lb-next" type="button" aria-label="Следующее фото">&rsaquo;</button>
+  <div class="lb-stage" id="lb-stage"><img id="lb-img" alt="" draggable="false"></div>
+  <div class="lb-tools">
+    <button class="lb-btn" id="lb-out" type="button" aria-label="Отдалить">&minus;</button>
+    <button class="lb-btn" id="lb-reset" type="button" aria-label="Сбросить масштаб">1:1</button>
+    <button class="lb-btn" id="lb-in" type="button" aria-label="Приблизить">+</button>
+  </div>
+  <p class="lb-hint">Колесо мыши или два пальца: масштаб. Перетаскивание: сдвиг. Двойной клик: 2,5×.</p>
+</div>
 
 <button class="music" id="music" type="button" aria-pressed="false" aria-label="Включить музыку" title="Музыка">
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path class="note" d="M9 18V6l10-2v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/><path class="mute" d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
